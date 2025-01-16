@@ -1,0 +1,6 @@
+mkdir docker
+cd doker
+gedit dockerfile
+sudo systemctl status docker
+sudo systemctl start docker
+sudo systemctl enable docker
