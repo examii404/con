@@ -1,0 +1,16 @@
+Ex: 1
+sol:
+ docker build -t  workshop .
+ docker run -p 8081:8081 workshop   (Interactive mode)
+ 
+Open in broswer and Enter : http://localhost:8081/workshop
+you should see Welcome message
+
+docker run -p 8081:8081 -d  workshop (Deamon mode)
+
+Ex: 2
+    docker build -t  workshop .
+    docker run -p 8081:8081 -d workshop
+    docker ps  (Take container ID from output)
+    docker logs  -f  <container ID>    (to Check logs)
+    docker  exec -it <container ID>  /bin/sh  (locate your jar file)
